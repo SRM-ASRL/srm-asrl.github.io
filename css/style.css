@@ -69,3 +69,18 @@ footer{
     padding:20px;
     margin-top:40px;
 }
+.profile-card{
+    text-align:center;
+}
+
+.profile-card img{
+    width:180px;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    border:3px solid #003366;
+}
+
+.profile-card h3{
+    margin-top:15px;
+}
