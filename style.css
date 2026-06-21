@@ -267,6 +267,9 @@ footer{
     .grid{
         grid-template-columns:1fr;
     }
+    .grid > *{
+        width:100%;
+    }
 }
 
 /* =====================================
