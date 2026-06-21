@@ -209,21 +209,28 @@ footer{
    MOBILE DEVICES
 ===================================== */
 
+/* =====================================
+   MOBILE DEVICES
+===================================== */
+
 @media screen and (max-width:768px){
 
+    /* Compact Menu */
+
     nav{
-        display:flex;
-        overflow-x:auto;
-        white-space:nowrap;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
         padding:10px;
-        justify-content:flex-start;
-        -webkit-overflow-scrolling:touch;
+        text-align:center;
     }
 
     nav a{
-        display:inline-flex !important;
-        flex:0 0 auto;
-        margin:0 10px;
+        display:block;
+        margin:0;
+        padding:8px;
+        background:#0066cc;
+        border-radius:5px;
         font-size:14px;
     }
 
@@ -231,19 +238,22 @@ footer{
         width:95%;
     }
 
+    /* Banner */
+
     .banner-image{
         width:100%;
         height:auto;
-        max-height:220px;
-        object-fit:cover;
+        max-height:none;
     }
+
+    /* Profile Images */
 
     .profile-card img{
         width:130px;
         height:160px;
     }
 
-
+    /* Cards */
 
     .card{
         padding:15px;
@@ -252,6 +262,8 @@ footer{
     .section{
         padding:20px 0;
     }
+
+    /* Typography */
 
     h1{
         font-size:1.8rem;
@@ -264,14 +276,33 @@ footer{
     h3{
         font-size:1.1rem;
     }
+
+    /* Single-column Layout */
+
     .grid{
         grid-template-columns:1fr;
     }
+
     .grid > *{
         width:100%;
     }
-}
 
+    /* Tables */
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    /* Weather Maps */
+
+    iframe{
+        width:100%;
+        height:400px;
+    }
+
+}
 /* =====================================
    LARGE SCREENS
 ===================================== */
