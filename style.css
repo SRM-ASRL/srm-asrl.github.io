@@ -19,6 +19,9 @@ nav{
     top:0;
     z-index:1000;
     box-shadow:0 2px 5px rgba(0,0,0,0.15);
+
+    overflow-x:auto;
+    white-space:nowrap;
 }
 
 nav a{
@@ -26,7 +29,7 @@ nav a{
     text-decoration:none;
     margin:0 12px;
     font-weight:bold;
-    transition:0.3s;
+    display:inline-block;
 }
 
 nav a:hover{
@@ -131,7 +134,6 @@ nav a:hover{
     padding:10px 18px;
     border-radius:5px;
     margin-top:10px;
-    transition:0.3s;
 }
 
 .button:hover{
@@ -146,6 +148,8 @@ table{
     width:100%;
     border-collapse:collapse;
     background:white;
+    overflow-x:auto;
+    display:block;
 }
 
 table,
@@ -181,8 +185,6 @@ img{
     max-width:100%;
 }
 
-/* Gallery Images */
-
 .gallery img{
     width:100%;
     border-radius:8px;
@@ -203,32 +205,67 @@ footer{
 }
 
 /* =====================================
-   RESPONSIVE DESIGN
+   MOBILE DEVICES
 ===================================== */
 
 @media screen and (max-width:768px){
 
+    nav{
+        padding:10px;
+        text-align:left;
+    }
+
     nav a{
-        display:block;
-        margin:10px 0;
+        font-size:14px;
+        margin:0 8px;
     }
 
     .container{
         width:95%;
     }
 
+    .banner-image{
+        width:100%;
+        height:auto;
+        max-height:220px;
+        object-fit:cover;
+    }
+
     .profile-card img{
-        width:150px;
-        height:190px;
+        width:130px;
+        height:160px;
     }
 
     .card{
         padding:15px;
     }
 
-    .banner-image{
-        width:100%;
-        height:auto;
+    .section{
+        padding:20px 0;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    h2{
+        font-size:1.4rem;
+    }
+
+    h3{
+        font-size:1.1rem;
+    }
+
+}
+
+/* =====================================
+   LARGE SCREENS
+===================================== */
+
+@media screen and (min-width:1200px){
+
+    .container{
+        max-width:1200px;
     }
 
 }
