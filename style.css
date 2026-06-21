@@ -14,15 +14,15 @@ body{
 
 .hero{
     width:100%;
-    background:white;
-    text-align:center;
     margin:0;
     padding:0;
+    overflow:hidden;
 }
 
 .banner-image{
     width:100%;
-    height:auto;
+    max-height:480px;
+    object-fit:cover;
     display:block;
 }
 
@@ -122,10 +122,10 @@ nav a:hover{
 
 .button{
     display:inline-block;
-    padding:10px 18px;
     background:#00509e;
     color:white;
     text-decoration:none;
+    padding:10px 18px;
     border-radius:5px;
     margin-top:10px;
     transition:0.3s;
@@ -221,14 +221,14 @@ footer{
         width:95%;
     }
 
+    .banner-image{
+        max-height:250px;
+        object-fit:cover;
+    }
+
     .profile-card img{
         width:150px;
         height:190px;
-    }
-
-    .banner-image{
-        width:100%;
-        height:auto;
     }
 
     .card{
